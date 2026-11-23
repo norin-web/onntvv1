@@ -408,3 +408,12 @@ main { position: relative; z-index: 1; }
 /* ── device frame: rounded handset around each screen, soft shadow below ── */
 .device { position: relative; padding: 12px; border-radius: 58px; background: #16171d; box-shadow: var(--shadow); }
 .device img { display: block; width: 100%; height: auto; border-radius: 46px; }
+
+/* ── legal pages: plain single column ── */
+.legal-plain { max-width: 680px; margin: 0 auto; padding: 136px var(--gutter) 96px; font-size: 16px; line-height: 1.65; color: var(--body-text); }
+.legal-plain h1 { font-family: var(--display); font-size: clamp(30px, 4vw, 40px); font-weight: 700; color: var(--text); margin-bottom: 32px; }
+.legal-plain h2 { font-family: var(--display); font-size: 20px; font-weight: 600; color: var(--text); margin: 40px 0 12px; }
+.legal-plain h3 { font-size: 16px; font-weight: 600; color: var(--text); margin: 24px 0 8px; }
+.legal-plain p, .legal-plain ul { margin: 0 0 16px; }
+.legal-plain ul { padding-left: 22px; list-style: disc; }
+.legal-plain a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
