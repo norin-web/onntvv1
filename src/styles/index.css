@@ -197,7 +197,7 @@ ul, ol { padding: 0; list-style: none; }
 
 /* app screen on iPhone, shown large under the hero */
 .mockup { position: relative; overflow: hidden; margin-top: -8px; padding-bottom: 0; }
-.mockup img { width: min(340px, 78vw); margin: 0 auto; }
+.mockup .device { width: min(340px, 78vw); margin: 0 auto; }
 .mockup::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 30%; background: linear-gradient(180deg, rgba(7, 8, 11, 0), var(--bg) 85%); pointer-events: none; }
 
 /* ── sections ─────────────────────────────────────────────── */
@@ -214,7 +214,7 @@ ul, ol { padding: 0; list-style: none; }
 .checks { display: grid; gap: 10px; padding-top: 6px; }
 .checks li { display: flex; align-items: center; gap: 10px; color: var(--text-2); }
 .checks svg { color: var(--accent); flex-shrink: 0; }
-.fcard__phone { width: min(280px, 80%); height: auto; margin: 12px auto -28px; }
+.fcard__phone { width: min(280px, 80%); height: auto; margin: 12px auto 0; }
 .fcards__row { display: grid; gap: 12px; }
 
 @media (min-width: 900px) {
@@ -244,10 +244,10 @@ ul, ol { padding: 0; list-style: none; }
 
 /* ── app page ─────────────────────────────────────────────── */
 .reel { display: flex; flex-direction: column; align-items: center; gap: 36px; padding: 0 var(--gutter); }
-.reel__phone img { width: min(300px, 80vw); height: auto; }
+.reel__phone .device { width: min(300px, 80vw); }
 @media (min-width: 900px) {
   .reel { flex-direction: row; justify-content: center; align-items: flex-end; gap: clamp(40px, 8vw, 120px); padding-bottom: 40px; }
-  .reel__phone img { width: clamp(260px, 26vw, 360px); }
+  .reel__phone .device { width: clamp(260px, 26vw, 360px); }
 }
 .grid2, .grid3 { display: grid; gap: 12px; }
 .fbox { display: flex; flex-direction: column; gap: 12px; padding: 28px; }
@@ -404,3 +404,7 @@ main { position: relative; z-index: 1; }
   .fcard--wide .fcard__phone { position: relative; right: auto; left: auto; top: auto; width: 280px; margin: 0; }
   .fcard--flip .fcard__phone { order: 2; }
 }
+
+/* ── device frame: rounded handset around each screen, soft shadow below ── */
+.device { position: relative; padding: 12px; border-radius: 58px; background: #16171d; box-shadow: var(--shadow); }
+.device img { display: block; width: 100%; height: auto; border-radius: 46px; }

@@ -28,7 +28,7 @@ export default function Home() {
 
       {/* S02 App on iPhone */}
       <section className="mockup" aria-label="The app on iPhone">
-        <img src={img("/images/phone-remote.png")} alt="The remote screen of the app with power, D-pad, volume and channel keys" width={786} height={1704} />
+        <div className="device"><img src={img("/images/phone-remote.png")} alt="The remote screen of the app with power, D-pad, volume and channel keys" width={786} height={1704} /></div>
       </section>
 
       {/* S03 Features */}
@@ -46,7 +46,7 @@ export default function Home() {
                   <li><Check />Volume, mute and channels</li>
                 </ul>
               </div>
-              <img className="fcard__phone" src={img("/images/phone-remote.png")} alt="Remote screen with the D-pad" loading="lazy" width={786} height={1704} />
+              <div className="device fcard__phone"><img src={img("/images/phone-remote.png")} alt="Remote screen with the D-pad" loading="lazy" width={786} height={1704} /></div>
             </Reveal>
 
             <Reveal className="fcard fcard--wide fcard--flip card">
@@ -58,7 +58,7 @@ export default function Home() {
                   <li><Check />Back, Home and Exit within reach</li>
                 </ul>
               </div>
-              <img className="fcard__phone" src={img("/images/phone-trackpad.png")} alt="Remote screen with the touchpad" loading="lazy" width={786} height={1704} />
+              <div className="device fcard__phone"><img src={img("/images/phone-trackpad.png")} alt="Remote screen with the touchpad" loading="lazy" width={786} height={1704} /></div>
             </Reveal>
           </div>
 

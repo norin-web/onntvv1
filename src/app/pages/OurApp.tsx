@@ -25,7 +25,7 @@ export default function OurApp() {
       <section className="reel" aria-label="App screens">
         {phones.map((p, i) => (
           <div key={p.src} className={`reel__phone reel__phone--${i}`}>
-            <img src={img(p.src)} alt={p.alt} width={786} height={1704} />
+            <div className="device"><img src={img(p.src)} alt={p.alt} width={786} height={1704} /></div>
           </div>
         ))}
       </section>
